@@ -175,3 +175,41 @@ button:active{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* banner */
+.container {
+	min-height: 5vh;
+}
+  
+.letters {
+	display: flex;
+	justify-content: center;
+	/* padding-top: 2px; */
+	/* margin-bottom: 2px; */
+	text-transform:uppercase;
+	font-size: 40px;
+}
+
+/* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
+.letters p {
+	text-align: center;
+  color: #e6db74;
+	background-color: #3e3d32;
+	width: 55px;
+	margin-right: 1.5px;
+	border-radius: 15%;
+	border-color:#e6db74;
+	border-style: solid;
+}
+
+/* Add rules for steps 8 and 9 */
+.letters:hover p:nth-child(even) { 
+	transform: rotateY(360deg); 
+	transition: 1.5s; 
+}
+
+/* Add rules for steps 10 and 11 */
+.letters:hover p:nth-child(odd) {
+  transform: rotateX(360deg);
+  transition: 1.5s;
+}
